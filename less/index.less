@@ -240,7 +240,150 @@ body{
         height: 350px;
         margin: 0;
       }
+
+      h2{
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        @media (max-width: 500px){
+          font-size: 1.8rem;
+          margin: 30px 0 10px 0;
+          width: 100%;
+        }
+      }
+
+      p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-top: 25px;
+
+        @media (max-width: 500px){
+          font-size: 1.15rem;
+          line-height: 1.5rem;
+          margin-bottom: 15px;
+
+        }
+      }
+
+      .button{
+        display: flex;
   justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        height: 40px;
+        width: 135px;
+        cursor: pointer;
+
+        &:hover{
+          background-color: palevioletred;
+          color:#FFFFFF;
+        }
+
+        @media (max-width: 500px){
+          width: 100%;
+          height: 20%;
+        }
+
+      }
+    }
+  }
+}
+
+.projects{
+  width: 83%;
+  display: flex;
+  flex-direction: column;
+
+  h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 50px 0 50px 0;
+
+    @media(max-width: 500px){
+      font-size: 2rem;
+      margin: 0 0 30px 0;
+    }
+  }
+
+  .project-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+
+    @media (max-width: 500px){
+      margin-bottom: 25px;
+    }
+
+    div{
+
+      .project-img{
+        @media (max-width: 500px){
+          display:none;
+        }
+      }
+
+      .project-mobile-img{
+        display: none;
+
+        @media (max-width: 500px){
+          display: block
+        }
+      }
+
+      img{
+        width: 100%;
+        margin-bottom: 100px;
+
+      }
+
+      div{ 
+        border: 1px solid green;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        letter-spacing: .5rem;
+        align-items: center;
+        font-size: 1.5rem;
+        margin: -160px 0 0px 38%;
+        width: 310px;
+        height: 95px;
+        border: 1px solid #FFFFFF;
+        background-color: #DCDCDC;
+
+        @media(max-width: 500px){
+          margin: -110px 0 0 3.5%;
+          width: 290px;
+        }
+      }
+
+    }
+
+    .outskirts{
+      div{
+        margin: -160px 0 0px 0;
+
+        @media(max-width: 500px){
+          margin: -110px 0 0 3.5%;
+          width: 290px;
+        }
+      }
+
+    }
+
+    p{
+      width: 52.5%;
+      font-size: 1.1rem;
+      letter-spacing: .01rem;
+      line-height: 1.5rem;
+      margin-bottom: 25px;
+
+      @media(max-width: 500px){
+        width: 80%;
+      }
+    }
+  }
+}
   small{
     display: flex;
     justify-content: center;
