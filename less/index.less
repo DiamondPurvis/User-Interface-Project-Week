@@ -95,6 +95,65 @@ body{
       }
     }
   }
+
+  .active{
+    display: flex;
+  }
+
+  img{
+    margin-right: 18%;
+    padding-top: 12px;
+    height: 21px;
+    widows: 32px;
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+
+
+    @media (max-width: 500px){
+      padding: 0;
+      margin-right: 30px
+    }
+  }
+
+}
+
+.jumbo{
+  height: 550px;
+  margin-top: 50px;
+
+  @media (max-width: 500px){
+   height: 5.5%;   
+   margin-bottom: 7%;
+   width: 100%;
+  }
+
+  img{
+    height: 100%;
+    width: 100%;
+
+    @media (max-width: 500px){
+    width: 100%;
+     height: 100%; 
+    }
+  }
+
+  .home-jumbo{
+
+    @media(max-width: 500px){
+      display:none;
+    }
+  }
+
+  .home-jumbo-mobile{
+    display: none;
+
+    @media (max-width: 500px){
+      display: block;
+      height: 300px;
+      width: 100%;
+    }
+  }
   display:flex;
   justify-content: center;
   font-size: 65%
