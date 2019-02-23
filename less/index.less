@@ -546,6 +546,45 @@ footer{
     line-height: 1.5rem;
   }
 }
+
+.services-tabs{
+
+  width: 85%;
+
+  @media (max-width: 500px){
+    height:1150px;
+  }
+  .tabs{
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+    .button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 22%;
+      border: 1px solid black;
+      cursor: pointer;
+
+      @media (max-width: 500px) {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+    }
+    p{
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    .selected{
+      background-color: #5E9FB9;
+      color: #FFFFFF;
+    }
+  }
 }
 
 body .container-home {
