@@ -89,6 +89,7 @@ body .container {
 }
 .navbar .nav-items a:hover {
   color: #504545;
+  text-shadow: 2px 2px 4px palevioletred;
   cursor: pointer;
 }
 @media (max-width: 500px) {
@@ -118,6 +119,7 @@ body .container {
 .jumbo {
   height: 550px;
   margin-top: 50px;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .jumbo {
@@ -262,11 +264,14 @@ body .container {
   border: 1px solid black;
   height: 40px;
   width: 135px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
   cursor: pointer;
 }
 .learn-more .learn-more-card .learn-more-content .button:hover {
   background-color: palevioletred;
   color: #FFFFFF;
+  border: 0px;
 }
 @media (max-width: 500px) {
   .learn-more .learn-more-card .learn-more-content .button {
@@ -700,10 +705,14 @@ footer small {
   border: 1px solid black;
   font-size: 0.8rem;
   font-weight: 600;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 .contact-content .contact-form .button:hover {
   background-color: palevioletred;
   color: #FFFFFF;
+  border: 0px;
 }
 .contact-content .contact-form .how-Many {
   margin-bottom: 30px;
